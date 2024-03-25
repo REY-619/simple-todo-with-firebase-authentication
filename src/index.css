@@ -1,13 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  margin-bottom: 20px;
+}
+.activeColor {
+  border: 2px solid rgb(212, 168, 23);
+  background: white;
+  cursor: pointer;
+  color: black;
+  border-radius: 5px;
+  gap: 20px;
+  padding: 10px;
+}
+.pointer {
+  cursor: pointer;
+  color: white;
+  margin: 0px 10px;
+}
+
+.img {
+  object-fit: cover;
+  height: 100vh;
+}
+
+.email {
+  padding: 5px;
+  margin: 5px;
+}
+
+.password {
+  padding: 5px;
+  margin: 5px;
+}
+
+.signin {
+  margin-left: 40%;
+  padding: 5px 10px;
+  background: #4e80a8;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: large;
+}
+
+.container {
+  display: flex;
+}
+
+.left-half {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.right-half {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.right-half form {
+  margin-top: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background: greenyellow;
+  height: 10vh;
+}
+
+.signout {
+  width: auto;
+  padding: 5px;
+}
+/* Additional CSS styling can be added as needed */
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.inputtag {
+  display: flex;
+}
+.background-image {
+  background-color: #4e80a8;
+  height: 90vh;
+  object-fit: cover;
+}
+
+.forgot {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
